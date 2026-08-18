@@ -1,0 +1,89 @@
+{
+  "chart": {
+    "result": [
+      {
+        "meta": {
+          "currency": "CNH",
+          "symbol": "CNH=X",
+          "exchangeName": "CCY",
+          "fullExchangeName": "CCY",
+          "instrumentType": "CURRENCY",
+          "firstTradeDate": null,
+          "regularMarketTime": 1787069885,
+          "hasPrePostMarketData": false,
+          "gmtoffset": 3600,
+          "timezone": "BST",
+          "exchangeTimezoneName": "Europe/London",
+          "regularMarketPrice": 6.7463,
+          "fiftyTwoWeekHigh": 6.7476,
+          "fiftyTwoWeekLow": 6.7404,
+          "regularMarketDayHigh": 6.7476,
+          "regularMarketDayLow": 6.7404,
+          "regularMarketVolume": 0,
+          "longName": "USD/CNH",
+          "shortName": "USD/CNH",
+          "chartPreviousClose": 6.7406,
+          "priceHint": 4,
+          "currentTradingPeriod": {
+            "pre": {
+              "timezone": "BST",
+              "start": 1787007600,
+              "end": 1787007600,
+              "gmtoffset": 3600
+            },
+            "regular": {
+              "timezone": "BST",
+              "start": 1787007600,
+              "end": 1787093940,
+              "gmtoffset": 3600
+            },
+            "post": {
+              "timezone": "BST",
+              "start": 1787093940,
+              "end": 1787093940,
+              "gmtoffset": 3600
+            }
+          },
+          "dataGranularity": "1d",
+          "range": "2y",
+          "validRanges": [
+            "1d",
+            "5d"
+          ]
+        },
+        "timestamp": [
+          1787069885
+        ],
+        "indicators": {
+          "quote": [
+            {
+              "high": [
+                6.747640132904053
+              ],
+              "open": [
+                6.741049766540527
+              ],
+              "low": [
+                6.740379810333252
+              ],
+              "close": [
+                6.746339797973633
+              ],
+              "volume": [
+                0
+              ]
+            }
+          ],
+          "adjclose": [
+            {
+              "adjclose": [
+                6.746339797973633
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "error": null
+  }
+}

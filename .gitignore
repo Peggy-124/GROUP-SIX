@@ -1,0 +1,24 @@
+# 執行探測腳本後產生的資料檔（每個人跑出來的都不一樣，不進版控）
+probes/output/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# 作業系統
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 編輯器
+.vscode/
+.idea/
+
+# 不放進公開倉庫的教材（由授課教師另行提供給學生）
+*.pptx
+*.potx
+# *.pdf（講義 PDF 要進版控，故不忽略）
+assets/news-shots/
