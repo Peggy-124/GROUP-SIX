@@ -198,7 +198,7 @@ def plot_correlation_heatmap(
             colorscale="RdBu_r",  # 負相關為藍，正相關為紅
             zmin=-1.0,
             zmax=1.0,
-            colorbar=dict(title="相關係數 (r)", titleside="right"),
+            colorbar=dict(title="相關係數 (r)"),
             hovertemplate="<b>%{y}</b> 與 <b>%{x}</b><br>相關係數: %{z:.4f}<extra></extra>",
         )
     )
@@ -352,19 +352,32 @@ def plot_event_study_trajectory(
                 name=col,
                 line=dict(width=width, dash=line_dash, color=color),
                 marker=dict(size=5),
-                hovertemplate="<b>%{x}</b> (" + [d.strftime("%Y-%m-%d") for d in dates] + ")<br>" +
+                customdata=[str(d)[:10] for d in dates],
+                hovertemplate="<b>%{x}</b> (%{customdata})<br>" +
                               f"{col}: %{{y:.2f}}<extra></extra>",
             )
         )
 
     # 標記 T 點
-    fig.add_vline(
+    fig.add_shape(
+        type="line",
+        x0="T (事件日)",
+        x1="T (事件日)",
+        y0=0,
+        y1=1,
+        xref="x",
+        yref="paper",
+        line=dict(width=2, dash="dot", color="#E63946"),
+    )
+    fig.add_annotation(
         x="T (事件日)",
-        line_width=2,
-        line_dash="dot",
-        line_color="#E63946",
-        annotation_text="事件生效/發生日",
-        annotation_position="top left",
+        y=1,
+        xref="x",
+        yref="paper",
+        text="事件生效/發生日",
+        showarrow=False,
+        xanchor="right",
+        yanchor="bottom",
     )
     fig.add_hline(y=100, line_dash="solid", line_color="#94A3B8", line_width=1)
 
