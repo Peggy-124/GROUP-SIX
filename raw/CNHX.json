@@ -9,65 +9,65 @@
           "fullExchangeName": "CCY",
           "instrumentType": "CURRENCY",
           "firstTradeDate": null,
-          "regularMarketTime": 1787069885,
+          "regularMarketTime": 1787108621,
           "hasPrePostMarketData": false,
           "gmtoffset": 3600,
           "timezone": "BST",
           "exchangeTimezoneName": "Europe/London",
-          "regularMarketPrice": 6.7463,
-          "fiftyTwoWeekHigh": 6.7476,
-          "fiftyTwoWeekLow": 6.7404,
-          "regularMarketDayHigh": 6.7476,
-          "regularMarketDayLow": 6.7404,
+          "regularMarketPrice": 6.7417,
+          "fiftyTwoWeekHigh": 6.7485,
+          "fiftyTwoWeekLow": 6.741,
+          "regularMarketDayHigh": 6.7485,
+          "regularMarketDayLow": 6.741,
           "regularMarketVolume": 0,
           "longName": "USD/CNH",
           "shortName": "USD/CNH",
-          "chartPreviousClose": 6.7406,
+          "chartPreviousClose": 6.7456,
           "priceHint": 4,
           "currentTradingPeriod": {
             "pre": {
               "timezone": "BST",
-              "start": 1787007600,
-              "end": 1787007600,
+              "end": 1787094000,
+              "start": 1787094000,
               "gmtoffset": 3600
             },
             "regular": {
               "timezone": "BST",
-              "start": 1787007600,
-              "end": 1787093940,
+              "end": 1787180340,
+              "start": 1787094000,
               "gmtoffset": 3600
             },
             "post": {
               "timezone": "BST",
-              "start": 1787093940,
-              "end": 1787093940,
+              "end": 1787180340,
+              "start": 1787180340,
               "gmtoffset": 3600
             }
           },
           "dataGranularity": "1d",
-          "range": "2y",
+          "range": "1y",
           "validRanges": [
             "1d",
             "5d"
           ]
         },
         "timestamp": [
-          1787069885
+          1787108621
         ],
         "indicators": {
           "quote": [
             {
               "high": [
-                6.747640132904053
-              ],
-              "open": [
-                6.741049766540527
+                6.748549938201904
               ],
               "low": [
-                6.740379810333252
+                6.741040229797363
               ],
               "close": [
-                6.746339797973633
+                6.741720199584961
+              ],
+              "open": [
+                6.745689868927002
               ],
               "volume": [
                 0
@@ -77,7 +77,7 @@
           "adjclose": [
             {
               "adjclose": [
-                6.746339797973633
+                6.741720199584961
               ]
             }
           ]
