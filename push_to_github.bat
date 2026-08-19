@@ -8,11 +8,17 @@ echo.
 :: 檢查 git 是否存在
 where git >nul 2>nul
 if %errorlevel% neq 0 (
-    echo [提示] 系統找不到 git 指令，請確認是否已安裝 Git for Windows。
-    echo 如果已安裝，請使用「Git Bash」開啟本資料夾執行。
-    echo.
-    pause
-    exit /b 1
+    if exist "C:\Program Files\Git\cmd\git.exe" (
+        set "PATH=C:\Program Files\Git\cmd;%PATH%"
+    ) else if exist "C:\Users\%USERNAME%\AppData\Local\Programs\Git\cmd\git.exe" (
+        set "PATH=C:\Users\%USERNAME%\AppData\Local\Programs\Git\cmd;%PATH%"
+    ) else (
+        echo [提示] 系統找不到 git 指令，請確認是否已安裝 Git for Windows。
+        echo 如果已安裝，請使用「Git Bash」開啟本資料夾執行。
+        echo.
+        pause
+        exit /b 1
+    )
 )
 
 :: 初始化與設定遠端倉庫
